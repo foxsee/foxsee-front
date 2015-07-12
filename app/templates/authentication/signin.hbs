@@ -1,0 +1,17 @@
+<i class="close icon"></i>
+<div class="header">Sign in</div>
+<div class="content">
+    <form {{bind-attr class=":ui  :form"}} {{action "authenticate" on="submit"}}>
+        <div class="field">
+            <label for="identification">email</label>
+          {{input type='text' value=identification}}
+        </div>
+        <div class="field">
+            <label for="password">password</label>
+          {{input type='password' value=password}}
+        </div>
+        <div class="field">
+          {{input type='submit' class='ui submit primary button' value='signin'}}
+        </div>
+    </form>
+</div>
